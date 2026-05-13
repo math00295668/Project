@@ -7,7 +7,7 @@ A community-driven fashion social platform where users can share outfit photos, 
 ## 📄 Report & Demo
 
 - **Full project report** — see `WebDev_Report_Final.docx` (included in this submission)
-- **Video demo** — [link to screencast]
+
 
 ---
 
@@ -15,8 +15,8 @@ A community-driven fashion social platform where users can share outfit photos, 
 
 | | |
 |---|---|
-| **Live site** | [link to S3 URL] |
-| **GitHub repo** | [link to repo] |
+| **Live site** | [http://outfit-share.s3-website-eu-west-1.amazonaws.com] |
+| **GitHub repo** | [https://github.com/math00295668/Project] |
 
 ---
 
