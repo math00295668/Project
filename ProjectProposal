@@ -1,0 +1,39 @@
+1. Concept Overview
+OutfitShare is a community-driven fashion platform designed to bridge the gap between inspiration and acquisition. Unlike traditional social networks that only focus on visual sharing, OutfitShare allows users to post their outfits and digitally "tag" individual clothing items within the image. Each tagged item includes a direct purchase link, allowing other users to easily recreate the looks they are inspired by.
+
+2. Core Features & External API Integration
+
+    Interactive Outfit Posts: Users upload images and pin specific items (e.g., shoes, jacket) with metadata, including brand, price, and a direct hyperlink to the external store.
+
+    Dynamic Currency Conversion (Third-Party API): To facilitate a global user base, the platform will integrate a live Currency Exchange API (e.g., ExchangeRate-API). This will automatically convert the tagged item prices into the user's local currency in real-time.
+
+    User Engagement: A fully functional comment section and a "like" system under each post.
+
+    Algorithmic "Trending" Feed: The homepage will be powered by a custom Time-Decay sorting algorithm to ensure fresh and engaging content always surfaces to the top.
+
+3. Algorithmic Complexity (The "Brain" of the App)
+To demonstrate advanced backend logic, the core challenge will be implementing a Time-Decay / Gravity Algorithm for the main feed. The backend API will dynamically calculate a "Visibility Score" for each post in real-time before serving it to the client:
+
+Score= Likes+(Comments×2) / HoursAge+2​
+
+This mathematical approach prevents older, highly-liked posts from permanently dominating the feed, ensuring new creators have a fair chance to trend.
+
+4. Technical Stack
+
+    Frontend: Angular.
+
+    Backend: Node.js with Express (RESTful API architecture).
+
+    Database: MongoDB / Mongoose.
+
+    Deployment: AWS (Frontend on S3, Backend on a persistent EC2 instance).
+
+5. Main Technical Challenges
+
+    Designing a complex MongoDB schema to link Users, Posts, Embedded Item Links, and Comments.
+
+    Implementing the backend sorting algorithm efficiently using advanced JavaScript array methods.
+
+    Integrating and parsing data asynchronously from a Third-Party Currency API.
+
+Disclaimer: Please note that any UI/UX visuals provided at this stage are early prototypes and are subject to change during the development lifecycle.
